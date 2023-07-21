@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -20,12 +25,17 @@ body {
   justify-content: space-between;
 }
 
+section {
+  height: 500px;
+}
+
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 64px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 64px 120px;
+  background: #e5e5e5;
 }
 
 .menu__top {
@@ -33,13 +43,19 @@ body {
   justify-content: space-between;
 }
 
-.text-menu {
-    padding-top: 32px;
-  font-size: 22px;
-  color: #292929;
-  list-style-type: none;
+.nav {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.text {
-    padding-top: 32px;
+.nav__link {
+  color: #292929;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
