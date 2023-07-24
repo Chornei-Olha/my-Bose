@@ -31,7 +31,10 @@ body {
 .header__title {
   font-weight: bold;
   text-align: center;
+  font-size: 48px;
+  font-style: italic;
   letter-spacing: -1.5px;
+  line-height: 48px;
 }
 
 section {
