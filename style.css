@@ -23,6 +23,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -34,6 +35,16 @@ body {
   font-style: italic;
   letter-spacing: -1.5px;
   line-height: 48px;
+}
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .header__title {
+    font-size: 32px;
+  }
 }
 
 .menu {
@@ -48,6 +59,16 @@ body {
   padding: 64px 120px;
   background: #e5e5e5;
   height: 100vh;
+}
+@media (max-width: 1024px) {
+  .menu {
+    padding: 64px 72px;
+  }
+}
+@media (max-width: 576px) {
+  .menu {
+    padding: 32px 20px;
+  }
 }
 
 .menu:target {
@@ -95,9 +116,16 @@ body {
   justify-content: center;
   gap: 24px;
 }
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .recommended__products {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .recommended__products {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
@@ -127,15 +155,23 @@ body {
   font-weight: bold;
 }
 
+/* #region main */
+
 .main {
   padding: 120px;
   background-color: white;
 }
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .main {
-    padding: 20px;
+    padding: 120px 72px;
   }
 }
+@media (max-width: 576px) {
+  .main {
+    padding: 120px 20px;
+  }
+}
+/* #endregion */
 
 .categories {
   max-width: 1020px;
@@ -169,10 +205,21 @@ body {
 
 .photo-wide {
   width: 65%;
+  object-fit: cover;
 }
 
 .photo-square {
   width: 32%;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .photo-wide {
+    width: 48.5%;
+  }
+
+  .photo-square {
+    width: 48.5%;
+  }
 }
 
 .how-to-buy {
@@ -180,6 +227,11 @@ body {
   margin: 0 auto;
   display: flex;
   gap: 24px;
+}
+@media (max-width: 576px) {
+  .how-to-buy {
+    display: block;
+  }
 }
 
 .how-to-buy__title {
@@ -216,4 +268,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo {
+  height: 24px;
+}
+@media (max-width: 576px) {
+  .logo {
+    height: 16px;
+  }
 }
